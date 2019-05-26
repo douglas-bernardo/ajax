@@ -49,6 +49,7 @@ function criaQueryString(){
     }
 }
 
+// ------------ Trata a resposta do servidor -------------
 function trataResposta(){
     if(ajax.readyState == 4){
         if (ajax.status == 200) {
@@ -56,30 +57,5 @@ function trataResposta(){
         } else {
             alert("Problema na comunicação com o objeto XMLHttpRequest.");
         }
-    }
-}
-
-function Processa() {
-    ajax = IniciaAjax();
-    if (ajax) {
-        ajax.onreadystatechange = function () {
-            if(ajax.readyState == 4){
-                if(ajax.status == 200) {
-                    document.getElementById("resultado").value = ajax.responseText;
-                } else {
-                    alert(ajax.statusText);
-                }
-            }
-        }
-        nome = document.getElementById("nome").value;
-        valor = document.getElementById("valor").value;
-
-        //monta a QueryString
-        dados = 'nome='+nome+"&valor="+valor;
-
-        //faz a requisição e envio pelo método POST
-        ajax.open('POST', 'processa.php', true);
-        ajax.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-        ajax.send(dados);
     }
 }
