@@ -29,7 +29,7 @@ function iniciaRequisicao(tipo, url, bool) {
     ajax.send(dadosUsuario);
 }
 
-// ------ Inicia requisição com envio de dados ---------
+// ------ Inicia requisição com envio de dados ***ponto de entrada!***---------
 function enviaDados(url){
     criaQueryString();
     requisicaoHTTP("POST", url, true);

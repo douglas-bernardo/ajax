@@ -1,6 +1,6 @@
 function obtemPreco(cod) {
     if(cod){
-        var url = "exemplo1.php?cod=" + cod;
+        var url = "servidor/exemplo1.php?cod=" + cod;
         requisicaoHTTP("GET", url, true);
     }
 }

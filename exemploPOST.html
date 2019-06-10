@@ -9,15 +9,17 @@
 <body>
     
     <form name="form1" action="" method="post">
+
         Nome: <input name="nome" id="nome" type="text"><br><br>
+
         Digite um valor: <input name="valor" id="valor" type="text"><br><br>
 
-        <button type="button" onclick="Processa();" >Processar</button>
-        <hr>
+        <button type="button" onclick="Processa();" >Processar</button><hr>
+
         Resultado: <br>
-        <input type="text" name="resultado" id="resultado" readonly size="60">
+        <textarea name="resultado" id="resultado" cols="30" rows="10"></textarea>
 
     </form>
-    <script type="text/javascript" src="ajax.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
 </body>
 </html>
