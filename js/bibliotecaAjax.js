@@ -42,9 +42,9 @@ function criaQueryString(){
     var numElementos = frm.elements.length;
     for(var i = 0; i < numElementos; i++){
         if (i < numElementos - 1){
-            dadosUsuario += frm.elements[i].name + "=" + encodeURIComponent(frm.elements[i].valor) + "&";
+            dadosUsuario += frm.elements[i].name + "=" + encodeURIComponent(frm.elements[i].value) + "&";
         } else {
-            dadosUsuario += frm.elements[i].names + "=" + encodeURIComponent(frm.elements[i].valor);
+            dadosUsuario += frm.elements[i].name + "=" + encodeURIComponent(frm.elements[i].value);
         }
     }
 }

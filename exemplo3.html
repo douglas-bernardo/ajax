@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web interativa com AJAX e PHP</title>
+</head>
+<body>
+
+    <h2>Preencha o formulário:</h2>
+    <form action="javascript:void(0)" onsubmit="enviaDados('servidor/exemplo3.php'); return false">
+        <p>Nome:<input type="text" name="nome" id="nome" size="40"></p>
+        <p>Cidade:<input type="text" name="cidade" id="cidade" size="39"></p>        
+        <p>Estado:<input type="text" name="estado" id="estado" size="2"></p>
+        <p>País:<input type="text" name="pais" id="pais" size="30"></p>
+        <p><input type="submit" name="Consultar" value="Consultar"></p>
+    </form>
+    <hr><span id="campoResposta"></span>
+
+    <script type="text/javascript" src="js/bibliotecaAjax.js"></script>
+    <script type="text/javascript" src="js/exemplo3.js"></script>
+</body>
+</html>
