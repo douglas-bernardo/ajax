@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/estilosTimes.css">
+    <title>Web interativa com AJAX e PHP</title>
+</head>
+<body>
+
+    <h2>Times</h2>
+    <form action="javascript:void(0)" onsubmit="obtemInfo(this.time[time.selectedIndex].value); return false">
+        <p>
+            Escolha o time para ver as informações sobre ele: </br>
+            <select name="time" id="time">
+                <option value="gremio">Grêmio</option>
+                <option value="palmeiras">Palmeiras</option>
+                <option value="cruzeiro">Cruzeiro</option>
+                <option value="flamengo">Flamengo</option>
+                <option value="criciuma">Criciuma</option>
+            </select>
+        </p>        
+        <p>
+            <input type="submit" name="Exibir" id="Exibir" value="Exibir informações">
+        </p>
+    </form>
+    <hr><br>
+    <div id="saida"></div>
+
+    <script type="text/javascript" src="js/bibliotecaAjax.js"></script>
+    <script type="text/javascript" src="js/exemplo6.js"></script>
+</body>
+</html>
