@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="loja_ajax/assets/css/estilos.css">
+    <link rel="stylesheet" href="assets/css/estilos.css">
     <title>Web interativa com Ajax e PHP</title>
 </head>
 <body>
@@ -33,11 +33,11 @@
                     Categorias
                 </p>
                 <p>
-                    <?php include "mostraMenu.php";?>
+                    <?php include "php/mostraMenu.php";?>
                 </p>
             </td>
             <td width="20"></td>
-            <td width="630" class="fundoLaranja">
+            <td width="630" class="fundolaranja">
                 <div id="conteudo">
                     
                 </div>
@@ -55,6 +55,6 @@
     </p>
 
     <script type="text/javascript" src="assets/js/bibliotecaAjax.js"></script>
-    <script type="text/javascript" src="assets/js/exemplo9.js"></script>
+    <script type="text/javascript" src="assets/js/loja.js"></script>
 </body>
 </html>
